@@ -1,0 +1,35 @@
+﻿<UserControl 
+    x:Class="ControlExplorer.Controls.Chart.Labels"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:c1chart="clr-namespace:C1.Phone.Chart;assembly=C1.Phone.Chart"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480">
+    <UserControl.Resources>
+        <c1chart:DataPointConverter x:Key="fc"/>
+        <DataTemplate x:Key="lbl">
+            <Border Background="#B2FFFFFF" BorderBrush="White" BorderThickness="1">
+            	<Border BorderBrush="#E59AA5A4" BorderThickness="1">
+                <TextBlock Margin="10 5" FontSize="16" Text="{Binding Converter={StaticResource fc}, ConverterParameter=Series: \{#SeriesLabel\}\{#NewLine\}Value: \{#Value\}}" />
+				</Border>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <c1chart:C1Chart Grid.Row="1" x:Name="c1chart" ChartType="Column" Palette="Module" Margin="20, 10">
+        <c1chart:C1Chart.Data>
+            <c1chart:ChartData>
+                <c1chart:DataSeries Label="s1" Values="3 5 7" PointLabelTemplate="{StaticResource lbl}" />
+                <c1chart:DataSeries Label="s2" Values="1 2 3" PointLabelTemplate="{StaticResource lbl}" />
+            </c1chart:ChartData>
+        </c1chart:C1Chart.Data>
+        <c1chart:C1ChartLegend x:Name="legend" Margin="24,8,8,8" Position="Top" Orientation="Horizontal" HorizontalAlignment="Right" />
+    </c1chart:C1Chart>
+
+</UserControl>

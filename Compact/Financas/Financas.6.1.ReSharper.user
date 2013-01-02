@@ -1,0 +1,65 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:MainPage.xaml" caret="0" fromTop="0" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:MainPage.xaml.cs" caret="988" fromTop="25" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml" caret="2091" fromTop="15" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:App.xaml.cs" caret="3793" fromTop="14" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="197" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:MainPage.xaml.cs" caret="195" fromTop="8" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml" caret="2091" fromTop="15" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="3090" fromTop="24" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="298" fromTop="17" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="298" fromTop="16" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="298" fromTop="14" />
+      <File id="71E8B97E-8FB9-452A-A575-1FDE45301A1E/f:TelaCadastro.xaml.cs" caret="197" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="rDespesa" priority="26" />
+      <Item value="rReceita" priority="31" />
+      <Item value="rValor" priority="31" />
+      <Item value="xData" priority="31" />
+      <Item value="if" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.RadioButton">
+      <Item value="GetValue`0" priority="26" />
+      <Item value="IsChecked" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Controls.TextBlock">
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Phone.Controls.DatePicker">
+      <Item value="Value" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Navigation.NavigationService">
+      <Item value="BackStack" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False" />
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>
