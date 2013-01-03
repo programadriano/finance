@@ -1,23 +1,24 @@
-﻿<xapCache source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Bin\Debug\Financas.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="01/01/2013 18:00:34">
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="27/12/2012 21:31:45" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Background.png" archivePath="Background.png" lastWriteTime="27/12/2012 21:31:43" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="27/12/2012 21:31:43" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\obj\Debug\Financas.dll" archivePath="Financas.dll" lastWriteTime="01/01/2013 18:00:32" />
+﻿<xapCache source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Financas.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="03/01/2013 17:09:06">
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03/01/2013 16:31:48" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Background.png" archivePath="Background.png" lastWriteTime="03/01/2013 14:38:34" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="03/01/2013 14:38:34" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.dll" archivePath="Financas.dll" lastWriteTime="03/01/2013 17:09:05" />
   <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.Chart.dll" archivePath="C1.Phone.Chart.dll" lastWriteTime="14/11/2012 11:46:56" />
   <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.dll" archivePath="C1.Phone.dll" lastWriteTime="14/11/2012 11:46:56" />
+  <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.FlexGrid.dll" archivePath="C1.Phone.FlexGrid.dll" lastWriteTime="14/11/2012 11:47:02" />
   <file source="C:\Program Files (x86)\ESRI SDKs\WindowsPhone\v2.4\ESRI.ArcGIS.Client.dll" archivePath="ESRI.ArcGIS.Client.dll" lastWriteTime="10/01/2012 18:25:30" />
   <file source="C:\Program Files (x86)\ESRI SDKs\WindowsPhone\v2.4\ESRI.ArcGIS.Client.Toolkit.dll" archivePath="ESRI.ArcGIS.Client.Toolkit.dll" lastWriteTime="10/01/2012 18:25:32" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="15/09/2011 14:36:26" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="27/12/2012 21:31:45" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Resourses\app_bkg.png" archivePath="Resourses\app_bkg.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Images\notification.png" archivePath="Images\notification.png" lastWriteTime="27/12/2012 21:31:46" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Resourses\icons\appbar.money.png" archivePath="Resourses\icons\appbar.money.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="27/12/2012 21:31:43" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Save.png" archivePath="Toolkit.Content\ApplicationBar.Save.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="27/12/2012 21:31:48" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="27/12/2012 21:39:25" />
-  <file source="C:\Users\adriano\Documents\Visual Studio 2010\Projects\Compact\Compact\Financas\Financas\Bin\Debug\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="27/12/2012 21:31:48" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="15/09/2011 15:36:26" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Toolkit\Oct11\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="06/10/2011 11:33:14" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Resourses\app_bkg.png" archivePath="Resourses\app_bkg.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Images\notification.png" archivePath="Images\notification.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Resourses\icons\appbar.money.png" archivePath="Resourses\icons\appbar.money.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Save.png" archivePath="Toolkit.Content\ApplicationBar.Save.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="03/01/2013 14:38:36" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03/01/2013 15:46:29" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="03/01/2013 14:38:36" />
 </xapCache>

@@ -13,7 +13,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False">
+    shell:SystemTray.IsVisible="False" xmlns:my1="clr-namespace:C1.Phone.FlexGrid;assembly=C1.Phone.FlexGrid">
 
     <!--LayoutRoot contains the root grid where all other page content is placed-->
 
@@ -24,44 +24,18 @@
             </controls:Panorama.Background>
 
             <!--Panorama item one-->
-            <controls:PanoramaItem >
-                <ListBox x:Name="Receitas" Margin="0,0,-12,0" ItemsSource="{Binding Items}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Border CornerRadius="40" BorderBrush="Black" Grid.Row="0" BorderThickness="6" >
-                                <Grid>
-                                    <TextBlock FontSize="40"  TextWrapping="Wrap">
-                                    <TextBlock.Inlines>
-                                        <Run  Text="{Binding Descricao}" />:
-                                        <Run  Text="{Binding Valor}" />
-                                    </TextBlock.Inlines>
-                                    </TextBlock>
-                                </Grid>
-                            </Border>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+            <controls:PanoramaItem Header="Receitas">              
+                <my1:C1FlexGrid Name="flexgridReceita"/>
             </controls:PanoramaItem>
 
             <!--Panorama item two-->
-            <controls:PanoramaItem >
-                <ListBox x:Name="Despesa" Margin="0,0,-12,0" ItemsSource="{Binding Items}">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <TextBlock FontSize="40" TextWrapping="Wrap">
-                                    <TextBlock.Inlines>
-                                        <Run Text="{Binding Descricao}"  />:
-                                        <Run Text="{Binding Valor}" />
-                                    </TextBlock.Inlines>
-                                </TextBlock>
-                                <TextBlock x:Name="Total"></TextBlock>
-                            </Grid>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
+            <controls:PanoramaItem Header="Despesas">
+                <my1:C1FlexGrid Name="flexgrid"/>
             </controls:PanoramaItem>
+            
         </controls:Panorama>
+
+
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>

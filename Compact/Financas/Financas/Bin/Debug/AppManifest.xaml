@@ -3,6 +3,7 @@
     <AssemblyPart x:Name="Financas" Source="Financas.dll" />
     <AssemblyPart x:Name="C1.Phone.Chart" Source="C1.Phone.Chart.dll" />
     <AssemblyPart x:Name="C1.Phone" Source="C1.Phone.dll" />
+    <AssemblyPart x:Name="C1.Phone.FlexGrid" Source="C1.Phone.FlexGrid.dll" />
     <AssemblyPart x:Name="ESRI.ArcGIS.Client" Source="ESRI.ArcGIS.Client.dll" />
     <AssemblyPart x:Name="ESRI.ArcGIS.Client.Toolkit" Source="ESRI.ArcGIS.Client.Toolkit.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />

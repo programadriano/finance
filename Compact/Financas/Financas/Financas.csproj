@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="C1.Phone, Version=7.1.20123.282, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce" />
     <Reference Include="C1.Phone.Chart, Version=7.1.20123.282, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce, processorArchitecture=MSIL" />
+    <Reference Include="C1.Phone.FlexGrid, Version=7.1.20123.282, Culture=neutral, PublicKeyToken=2aa4ec5576d6c3ce" />
     <Reference Include="ESRI.ArcGIS.Client, Version=2.4.0.851, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
     <Reference Include="ESRI.ArcGIS.Client.Toolkit, Version=2.4.0.851, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86" />
     <Reference Include="Microsoft.Phone" />

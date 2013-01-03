@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading;
 using PhoneMVVM;
+using System.Windows.Media;
 
 namespace Financas
 {
@@ -14,41 +15,57 @@ namespace Financas
         public MainPage()
         {
             InitializeComponent();
+            var c = GetReceita();          
+            flexgridReceita.ItemsSource = c;
+            var col = flexgridReceita.Columns["Key"];
+            col.Header = "Descrição";
+            var value = flexgridReceita.Columns["value"];
+            value.Header = "Valor";
+           // col. = new SolidColorBrush(Colors.Blue);
 
-            IList<Cadastro> c = GetReceita();
-            Receitas.ItemsSource = c;
 
-            IList<Cadastro> d = GetDespesa();
-            Despesa.ItemsSource = d;         
-
+            var d = GetDespesa();
+            flexgrid.ItemsSource = d;
+            var key = flexgrid.Columns["Key"];
+            key.Header = "Descrição";
+            var valor = flexgrid.Columns["value"];
+            valor.Header = "Valor";
         }
 
-        public IList<Cadastro> GetReceita()
+        public Dictionary<string, double> GetReceita()
         {
             using (var ctx = new FinancasDataContext(conn))
             {
-                IList<Cadastro> lista = null;
+                Dictionary<string, double> lista = new Dictionary<string, double>();
+
                 IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 2).OrderBy(cadastro => Name);
 
                 if (query.Count() > 0)
                 {
-                    lista = query.ToList();
+                    foreach (var item in query.ToList())
+                    {
+                        lista.Add(item.Descricao, Convert.ToDouble(item.Valor));
+                    }
                 }
-
                 return lista;
             }
 
         }
 
-        public IList<Cadastro> GetDespesa()
+        public Dictionary<string, double> GetDespesa()
         {
             using (var ctx = new FinancasDataContext(conn))
             {
-                IList<Cadastro> lista = null;
+                Dictionary<string, double> lista = new Dictionary<string, double>();
+
                 IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 1).OrderBy(cadastro => Name);
+
                 if (query.Count() > 0)
                 {
-                    lista = query.ToList();
+                    foreach (var item in query.ToList())
+                    {
+                        lista.Add(item.Descricao, Convert.ToDouble(item.Valor));
+                    }
                 }
                 return lista;
             }
