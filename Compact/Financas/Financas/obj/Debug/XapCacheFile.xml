@@ -1,8 +1,8 @@
-﻿<xapCache source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Financas.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="03/01/2013 17:09:06">
-  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="03/01/2013 16:31:48" />
+﻿<xapCache source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Financas.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="04/01/2013 11:41:05">
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="04/01/2013 07:54:16" />
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Background.png" archivePath="Background.png" lastWriteTime="03/01/2013 14:38:34" />
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="03/01/2013 14:38:34" />
-  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.dll" archivePath="Financas.dll" lastWriteTime="03/01/2013 17:09:05" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.dll" archivePath="Financas.dll" lastWriteTime="04/01/2013 11:41:03" />
   <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.Chart.dll" archivePath="C1.Phone.Chart.dll" lastWriteTime="14/11/2012 11:46:56" />
   <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.dll" archivePath="C1.Phone.dll" lastWriteTime="14/11/2012 11:46:56" />
   <file source="C:\Program Files (x86)\ComponentOne\Studio for Windows Phone\bin\C1.Phone.FlexGrid.dll" archivePath="C1.Phone.FlexGrid.dll" lastWriteTime="14/11/2012 11:47:02" />
@@ -19,6 +19,6 @@
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="03/01/2013 14:38:36" />
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="03/01/2013 14:38:36" />
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="03/01/2013 14:38:36" />
-  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="03/01/2013 15:46:29" />
+  <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="04/01/2013 11:41:05" />
   <file source="C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Toolkit.Content\ApplicationBar.Add.gif" archivePath="Toolkit.Content\ApplicationBar.Add.gif" lastWriteTime="03/01/2013 14:38:36" />
 </xapCache>

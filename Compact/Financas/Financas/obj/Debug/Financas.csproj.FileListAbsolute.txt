@@ -119,12 +119,14 @@ C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\De
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Financas.xap
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.Chart.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.dll
+C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.FlexGrid.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\ESRI.ArcGIS.Client.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\ESRI.ArcGIS.Client.Toolkit.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.xml
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.Chart.xml
+C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.FlexGrid.xml
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\ESRI.ArcGIS.Client.xml
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\ESRI.ArcGIS.Client.Toolkit.xml
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\Microsoft.Phone.Controls.xml
@@ -156,10 +158,7 @@ C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\De
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\MainPage.g.i.cs
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\NovaCategoria.g.i.cs
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\TelaCadastro.g.i.cs
-C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\Transacao.g.i.cs
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.g.resources
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.pdb
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\XapCacheFile.xml
-C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.FlexGrid.dll
-C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\C1.Phone.FlexGrid.xml

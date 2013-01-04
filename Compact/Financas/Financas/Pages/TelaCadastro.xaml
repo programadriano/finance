@@ -31,10 +31,10 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock FontWeight="Bold" FontSize="20"  Text="Valor:" Margin="19,253,370,360" />
-            <TextBox Height="72" InputScope="Number"   HorizontalAlignment="Left" Margin="7,283,0,0" Name="xValor" Text="" VerticalAlignment="Top" Width="460" />
+            <TextBox Height="72" InputScope="Number"    HorizontalAlignment="Left" Margin="7,283,0,0" Name="xValor" Text="" VerticalAlignment="Top" Width="460" MouseEnter="xValor_TextChanged" LostFocus="removeChech" GotFocus="AddCheck" />
             <TextBlock FontWeight="Bold" FontSize="20" Text="Categoria:" Margin="18,36,318,0" Height="38" VerticalAlignment="Top" />
 
-            <toolkit:ListPicker   x:Name="ListPickerSub" Margin="0,80,6,465" HorizontalAlignment="Right" Width="432">
+            <toolkit:ListPicker   x:Name="ListPickerSub" Margin="0,80,6,479" HorizontalAlignment="Right" Width="432">
                 <toolkit:ListPicker.ItemTemplate>
                     <DataTemplate>
                         <TextBlock  Text="{Binding Nome}" />
@@ -52,17 +52,17 @@
             <RadioButton Content="Receita"  Height="72" HorizontalAlignment="Left" Margin="36,449,0,0"  Name="rDespesa" VerticalAlignment="Top" Checked="removeParcelas" />
             <RadioButton Content="Despesa" Height="72" HorizontalAlignment="Left" Margin="225,449,0,0" Name="rReceita" VerticalAlignment="Top" Width="152" Checked="AddParcelas" />
             <TextBlock FontSize="20" FontWeight="Bold" Margin="19,158,317,465" Text="Descrição:" />
-            <TextBox AcceptsReturn="False" Height="72" HorizontalAlignment="Left" Margin="5,178,0,0" Name="xDescricao" Text="" VerticalAlignment="Top" Width="460" />
-            <TextBox InputScope="Number" Height="72" HorizontalAlignment="Left" Margin="219,506,0,0" Name="parcela" Text="" VerticalAlignment="Top" Width="110" />
-            <TextBlock Name="tboxParcelas"  FontSize="20" FontWeight="Bold" Margin="19,525,0,88" Text="Númedo de parcelas:" HorizontalAlignment="Left" Width="216" />
+            <TextBox AcceptsReturn="False" Height="72" HorizontalAlignment="Left" Margin="5,178,0,0" Name="xDescricao" Text="" VerticalAlignment="Top" KeyDown="Button1Click" Width="460" />
+            <TextBox InputScope="Number" Height="73" HorizontalAlignment="Left" Margin="211,507,0,0" Name="parcela" Text="" VerticalAlignment="Top" Width="74" />
+            <TextBlock Name="tboxParcelas"  FontSize="20" FontWeight="Bold" Margin="18,542,0,71" Text="Númedo de parcelas:" HorizontalAlignment="Left" Width="216" />
+            <TextBlock Name="labelParcelas"  FontSize="20" FontWeight="Bold" Height="38" Margin="278,542,146,0" Text="X" VerticalAlignment="Top" />
         </Grid>
-        <TextBlock FontSize="20" FontWeight="Bold" Height="38" Margin="19,23,292,0" Text="Nova transação:" VerticalAlignment="Top" Grid.RowSpan="2" />
+        <TextBlock FontSize="20" FontWeight="Bold" Height="38" Margin="19,23,292,0" Text="Nova:" VerticalAlignment="Top" Grid.RowSpan="2" />
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <!--<shell:ApplicationBarIconButton IconUri="Toolkit.Content/ApplicationBar.Check.png" Click="Button1Click"  Text="ok"/>-->
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">            
             <shell:ApplicationBarIconButton IconUri="Toolkit.Content/ApplicationBar.Save.png" Click="Salvar"  Text="salvar"/>
             <shell:ApplicationBarIconButton IconUri="Toolkit.Content/ApplicationBar.Cancel.png" Click="Button2Click" Text="cancelar"/>
             <!--<shell:ApplicationBar.MenuItems>

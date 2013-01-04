@@ -7,6 +7,8 @@ using System.Windows;
 using System.Windows.Input;
 using Microsoft.Phone.Controls;
 using PhoneMVVM;
+using Microsoft.Phone.Shell;
+using System.ComponentModel;
 
 namespace Financas
 {
@@ -23,10 +25,14 @@ namespace Financas
 
             parcela.Visibility = Visibility.Collapsed;
             tboxParcelas.Visibility = Visibility.Collapsed;
+            labelParcelas.Visibility = Visibility.Collapsed;
 
             IList<Categoria> c = GetCategorias();
             // StringBuilder texto = new StringBuilder();
             this.ListPickerSub.ItemsSource = c;
+
+
+
         }
 
         public IList<Categoria> GetCategorias()
@@ -41,9 +47,12 @@ namespace Financas
 
         }
 
-        public void Button1Click(object sender, EventArgs eventArgs)
+        public void Button1Click(object sender, KeyEventArgs e)
         {
-            this.Focus();
+            if (e.Key == Key.Enter)
+            {
+                this.Focus();
+            }
         }
 
         public void Button2Click(object sender, EventArgs eventArgs)
@@ -100,6 +109,13 @@ namespace Financas
             }
         }
 
+
+        private void InputBoxKeyDown(object sender, EventArgs eventArgs)
+        {
+            ApplicationBar.Buttons.RemoveAt(0);
+            this.Focus();
+        }
+
         private void AddCategoria(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(
@@ -110,14 +126,49 @@ namespace Financas
         {
             parcela.Visibility = Visibility.Visible;
             tboxParcelas.Visibility = Visibility.Visible;
+            labelParcelas.Visibility = Visibility.Visible;
         }
 
         private void removeParcelas(object sender, RoutedEventArgs e)
         {
             parcela.Visibility = Visibility.Collapsed;
             tboxParcelas.Visibility = Visibility.Collapsed;
+            labelParcelas.Visibility = Visibility.Collapsed;
         }
 
+        private void xValor_TextChanged(object sender, MouseEventArgs e)
+        {
+            ApplicationBarIconButton button1 = null;
+            button1 = new ApplicationBarIconButton(new Uri("Toolkit.Content/ApplicationBar.Check.png", UriKind.Relative));
+            button1.Text = "Ok";
+            button1.Click += InputBoxKeyDown;
+            ApplicationBar.Buttons.Insert(0, button1);
+            //ApplicationBarIconButton appBarButton = (ApplicationBarIconButton)ApplicationBar.Buttons[0];   
+            //appBarButton.IconUri = new Uri("Toolkit.Content/ApplicationBar.Check.png", UriKind.Relative);
+            //appBarButton.
+        }
+
+        private void removeChech(object sender, RoutedEventArgs e)
+        {
+            var button1 = ApplicationBar.Buttons[0] as ApplicationBarIconButton;
+            if (button1.Text == "Ok")
+            {
+                ApplicationBar.Buttons.RemoveAt(0);
+            }
+
+        }
+
+        private void AddCheck(object sender, RoutedEventArgs e)
+        {
+            var button1 = ApplicationBar.Buttons[0] as ApplicationBarIconButton;
+            if (button1.Text != "Ok")
+            {                
+                button1 = new ApplicationBarIconButton(new Uri("Toolkit.Content/ApplicationBar.Check.png", UriKind.Relative));
+                button1.Text = "Ok";
+                button1.Click += InputBoxKeyDown;
+                ApplicationBar.Buttons.Insert(0, button1);
+            }
+        }
 
     }
 }
