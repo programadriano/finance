@@ -149,7 +149,6 @@ C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\De
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\pt-BR\ESRI.ArcGIS.Client.Toolkit.resources.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\ru\ESRI.ArcGIS.Client.Toolkit.resources.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\Bin\Debug\zh-CN\ESRI.ArcGIS.Client.Toolkit.resources.dll
-C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\App.g.i.cs
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\Chart.g.i.cs
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Pages\Export.g.i.cs
@@ -162,3 +161,4 @@ C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\De
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.pdb
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\XapCacheFile.xml
+C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Debug\Financas.csprojResolveAssemblyReference.cache

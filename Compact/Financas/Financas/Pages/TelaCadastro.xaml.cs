@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using PhoneMVVM;
 using Microsoft.Phone.Shell;
 using System.ComponentModel;
+using System.Globalization;
 
 namespace Financas
 {
@@ -72,12 +73,23 @@ namespace Financas
             {
                 var cat = new Categoria();
                 cat = ListPickerSub.SelectedItem as Categoria;
+                CultureInfo newCulture = new CultureInfo("pt-BR");
+                newCulture.NumberFormat.CurrencyDecimalSeparator = ".";
+                newCulture.NumberFormat.CurrencyGroupSeparator = ",";
+                newCulture.NumberFormat.NumberDecimalSeparator = ".";
+                newCulture.NumberFormat.NumberGroupSeparator = ",";
+
+
+                double valor = double.Parse(xValor.Value.ToString(), newCulture);
+
+
 
                 var cadastro = new Cadastro
                                    {
                                        Descricao = xDescricao.Text,
                                        CategoriaId = cat.Id,
-                                       Valor = Convert.ToDouble(xValor.Text),
+                                       Valor = valor,
+                                       Preco = xValor.Value.ToString(),
                                        Data = xData.Value,
                                        TipoCategoria = (rReceita.IsChecked.Value) ? 1 : 2,
                                        Parcelas = parcela.Text != "" ? Convert.ToInt32(parcela.Text) : 0
@@ -124,16 +136,16 @@ namespace Financas
 
         private void AddParcelas(object sender, RoutedEventArgs e)
         {
-            parcela.Visibility = Visibility.Visible;
-            tboxParcelas.Visibility = Visibility.Visible;
-            labelParcelas.Visibility = Visibility.Visible;
+            //parcela.Visibility = Visibility.Visible;
+            //tboxParcelas.Visibility = Visibility.Visible;
+            //labelParcelas.Visibility = Visibility.Visible;
         }
 
         private void removeParcelas(object sender, RoutedEventArgs e)
         {
-            parcela.Visibility = Visibility.Collapsed;
-            tboxParcelas.Visibility = Visibility.Collapsed;
-            labelParcelas.Visibility = Visibility.Collapsed;
+            //parcela.Visibility = Visibility.Collapsed;
+            //tboxParcelas.Visibility = Visibility.Collapsed;
+            //labelParcelas.Visibility = Visibility.Collapsed;
         }
 
         private void xValor_TextChanged(object sender, MouseEventArgs e)
@@ -162,13 +174,24 @@ namespace Financas
         {
             var button1 = ApplicationBar.Buttons[0] as ApplicationBarIconButton;
             if (button1.Text != "Ok")
-            {                
+            {
                 button1 = new ApplicationBarIconButton(new Uri("Toolkit.Content/ApplicationBar.Check.png", UriKind.Relative));
                 button1.Text = "Ok";
                 button1.Click += InputBoxKeyDown;
                 ApplicationBar.Buttons.Insert(0, button1);
             }
         }
+
+        private void xValor_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            //if (xValor.Value.Count() > 5)
+            //{
+            //    xValor.Mask = "$999.999,00";
+            //}
+           
+        }
+
+        
 
     }
 }

@@ -13,7 +13,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="False" xmlns:my1="clr-namespace:C1.Phone.FlexGrid;assembly=C1.Phone.FlexGrid">
+    shell:SystemTray.IsVisible="False" xmlns:my1="clr-namespace:C1.Phone.FlexGrid;assembly=C1.Phone.FlexGrid" xmlns:my2="clr-namespace:C1.Phone;assembly=C1.Phone">
 
     <!--LayoutRoot contains the root grid where all other page content is placed-->
 
@@ -34,8 +34,7 @@
             </controls:PanoramaItem>
             
         </controls:Panorama>
-
-
+       
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>

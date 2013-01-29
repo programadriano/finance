@@ -88,6 +88,8 @@ namespace PhoneMVVM
 		private int _Id;
 		
 		private string _Descricao;
+
+        private string _Preco;
 		
 		private System.Nullable<double> _Valor;
 		
@@ -166,6 +168,27 @@ namespace PhoneMVVM
 				}
 			}
 		}
+
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_Preco", DbType = "NVarChar(255)")]
+        public string Preco
+        {
+            get
+            {
+                return this._Preco;
+            }
+            set
+            {
+                if ((this._Preco != value))
+                {
+                    this.OnDescricaoChanging(value);
+                    this.SendPropertyChanging();
+                    this._Preco = value;
+                    this.SendPropertyChanged("Preco");
+                    this.OnDescricaoChanged();
+                }
+            }
+        }
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Valor", DbType="Float")]
 		public System.Nullable<double> Valor

@@ -15,13 +15,13 @@ namespace Financas
         public MainPage()
         {
             InitializeComponent();
-            var c = GetReceita();          
+            var c = GetReceita();
             flexgridReceita.ItemsSource = c;
             var col = flexgridReceita.Columns["Key"];
             col.Header = "Descrição";
             var value = flexgridReceita.Columns["value"];
             value.Header = "Valor";
-           // col. = new SolidColorBrush(Colors.Blue);
+            // col. = new SolidColorBrush(Colors.Blue);
 
 
             var d = GetDespesa();
@@ -32,11 +32,11 @@ namespace Financas
             valor.Header = "Valor";
         }
 
-        public Dictionary<string, double> GetReceita()
+        public Dictionary<string, string> GetReceita()
         {
             using (var ctx = new FinancasDataContext(conn))
             {
-                Dictionary<string, double> lista = new Dictionary<string, double>();
+                Dictionary<string, string> lista = new Dictionary<string, string>();
 
                 IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 2).OrderBy(cadastro => Name);
 
@@ -44,7 +44,8 @@ namespace Financas
                 {
                     foreach (var item in query.ToList())
                     {
-                        lista.Add(item.Descricao, Convert.ToDouble(item.Valor));
+                        var value = Convert.ToDouble(item.Valor);
+                        lista.Add(item.Descricao, value.ToString("C"));
                     }
                 }
                 return lista;
@@ -52,11 +53,11 @@ namespace Financas
 
         }
 
-        public Dictionary<string, double> GetDespesa()
+        public Dictionary<string, string> GetDespesa()
         {
             using (var ctx = new FinancasDataContext(conn))
             {
-                Dictionary<string, double> lista = new Dictionary<string, double>();
+                Dictionary<string, string> lista = new Dictionary<string, string>();
 
                 IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 1).OrderBy(cadastro => Name);
 
@@ -64,7 +65,8 @@ namespace Financas
                 {
                     foreach (var item in query.ToList())
                     {
-                        lista.Add(item.Descricao, Convert.ToDouble(item.Valor));
+                        var value = Convert.ToDouble(item.Valor);
+                        lista.Add(item.Descricao, value.ToString("C"));
                     }
                 }
                 return lista;
