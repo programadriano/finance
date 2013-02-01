@@ -43,9 +43,8 @@ namespace Financas
                 if (query.Count() > 0)
                 {
                     foreach (var item in query.ToList())
-                    {
-                        var value = Convert.ToDouble(item.Valor);
-                        lista.Add(item.Descricao, value.ToString("C"));
+                    {                       
+                        lista.Add(item.Descricao, item.Preco);
                     }
                 }
                 return lista;
@@ -65,8 +64,7 @@ namespace Financas
                 {
                     foreach (var item in query.ToList())
                     {
-                        var value = Convert.ToDouble(item.Valor);
-                        lista.Add(item.Descricao, value.ToString("C"));
+                        lista.Add(item.Descricao, item.Preco);
                     }
                 }
                 return lista;

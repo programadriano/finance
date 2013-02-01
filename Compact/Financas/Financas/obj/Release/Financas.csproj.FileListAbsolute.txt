@@ -47,3 +47,4 @@ C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Re
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Financas.dll
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Financas.pdb
 C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\XapCacheFile.xml
+C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Financas.csprojResolveAssemblyReference.cache

@@ -71,6 +71,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Extends\format.cs" />
     <Compile Include="Model\Financas.cs" />
     <Compile Include="Pages\Chart.xaml.cs">
       <DependentUpon>Chart.xaml</DependentUpon>

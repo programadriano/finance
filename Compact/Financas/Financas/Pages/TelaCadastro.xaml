@@ -43,7 +43,6 @@
                 <toolkit:ListPicker.FullModeItemTemplate>
                     <DataTemplate>
                         <TextBlock  FontSize="43" x:Uid="{Binding Id}"  Text="{Binding Nome}"  FontFamily="{StaticResource PhoneFontFamilyLight}"/>
-
                     </DataTemplate>
                 </toolkit:ListPicker.FullModeItemTemplate>
             </toolkit:ListPicker>
@@ -56,7 +55,7 @@
             <TextBox InputScope="Number" Height="73" HorizontalAlignment="Left" Margin="211,507,0,0" Name="parcela" Text="" VerticalAlignment="Top" Width="74" Visibility="Collapsed" />
             <TextBlock Name="tboxParcelas"  FontSize="20" FontWeight="Bold" Margin="18,542,0,71" Text="Númedo de parcelas:" HorizontalAlignment="Left" Width="216" Visibility="Collapsed" />
             <TextBlock Name="labelParcelas"  FontSize="20" FontWeight="Bold" Height="38" Margin="278,542,146,0" Text="X" VerticalAlignment="Top" Visibility="Collapsed" />
-            <my:C1NumericBox InputScope="Number" Height="72" HorizontalAlignment="Left" Margin="8,283,0,0" Format="C"  Name="xValor"  VerticalAlignment="Top" Width="457"  />
+            <TextBox Height="72" InputScope="Number" HorizontalAlignment="Left" Margin="8,283,0,0" Text="{Binding}"  Name="xValor"  VerticalAlignment="Top" Width="460" TextChanged="textBox1_TextChanged" />
         </Grid>
         <TextBlock FontSize="20" FontWeight="Bold" Height="38" Margin="19,23,292,0" Text="Nova:" VerticalAlignment="Top" Grid.RowSpan="2" />
     </Grid>

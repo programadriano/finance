@@ -10,6 +10,8 @@ using PhoneMVVM;
 using Microsoft.Phone.Shell;
 using System.ComponentModel;
 using System.Globalization;
+using TwoUIt.QuantoEstouPoupando.Utils;
+using System.Windows.Controls;
 
 namespace Financas
 {
@@ -80,7 +82,7 @@ namespace Financas
                 newCulture.NumberFormat.NumberGroupSeparator = ",";
 
 
-                double valor = double.Parse(xValor.Value.ToString(), newCulture);
+                
 
 
 
@@ -88,8 +90,8 @@ namespace Financas
                                    {
                                        Descricao = xDescricao.Text,
                                        CategoriaId = cat.Id,
-                                       Valor = valor,
-                                       Preco = xValor.Value.ToString(),
+                                      // Valor = xValor.Text.ToString(),
+                                       Preco = xValor.Text.ToString(),
                                        Data = xData.Value,
                                        TipoCategoria = (rReceita.IsChecked.Value) ? 1 : 2,
                                        Parcelas = parcela.Text != "" ? Convert.ToInt32(parcela.Text) : 0
@@ -180,15 +182,13 @@ namespace Financas
                 button1.Click += InputBoxKeyDown;
                 ApplicationBar.Buttons.Insert(0, button1);
             }
-        }
+        }     
 
-        private void xValor_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            //if (xValor.Value.Count() > 5)
-            //{
-            //    xValor.Mask = "$999.999,00";
-            //}
-           
+            var test = StringExtensions.ToDecimal(xValor.Text).ToString("c");
+            xValor.DataContext = test;
+            xValor.Select(xValor.Text.Length, 0);  
         }
 
         
