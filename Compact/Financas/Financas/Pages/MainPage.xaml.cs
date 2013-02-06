@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading;
 using PhoneMVVM;
 using System.Windows.Media;
+using System.Windows;
 
 namespace Financas
 {
@@ -38,12 +39,14 @@ namespace Financas
             {
                 Dictionary<string, string> lista = new Dictionary<string, string>();
 
-                IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 2).OrderBy(cadastro => Name);
+                var data = DateTime.Now.ToString().Substring(0, 11);
+                IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 2 && Convert.ToDateTime(x.Data.ToString().Substring(0, 11)) == Convert.ToDateTime(data))
+                    .OrderBy(cadastro => Name);
 
                 if (query.Count() > 0)
                 {
                     foreach (var item in query.ToList())
-                    {                       
+                    {
                         lista.Add(item.Descricao, item.Preco);
                     }
                 }
@@ -58,7 +61,9 @@ namespace Financas
             {
                 Dictionary<string, string> lista = new Dictionary<string, string>();
 
-                IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 1).OrderBy(cadastro => Name);
+                var data = DateTime.Now.ToString().Substring(0, 11);
+                IQueryable<Cadastro> query = ctx.Cadastros.Where(x => x.TipoCategoria == 1 && Convert.ToDateTime(x.Data.ToString().Substring(0, 11)) == Convert.ToDateTime(data))
+                    .OrderBy(cadastro => Name);
 
                 if (query.Count() > 0)
                 {
@@ -81,7 +86,8 @@ namespace Financas
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-
+            NavigationService.Navigate(
+              new Uri("/Pages/Historico.xaml", UriKind.Relative));
         }
 
 

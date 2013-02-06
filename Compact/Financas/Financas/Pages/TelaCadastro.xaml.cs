@@ -79,13 +79,7 @@ namespace Financas
                 newCulture.NumberFormat.CurrencyDecimalSeparator = ".";
                 newCulture.NumberFormat.CurrencyGroupSeparator = ",";
                 newCulture.NumberFormat.NumberDecimalSeparator = ".";
-                newCulture.NumberFormat.NumberGroupSeparator = ",";
-
-
-                
-
-
-
+                newCulture.NumberFormat.NumberGroupSeparator = ",";    
                 var cadastro = new Cadastro
                                    {
                                        Descricao = xDescricao.Text,

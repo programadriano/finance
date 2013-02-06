@@ -98,3 +98,4 @@ C:\Users\adriano\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\
 C:\Users\adriano\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Financas.pdb
 C:\Users\adriano\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\XapCacheFile.xml
 C:\Users\adriano\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Pages\Historico.g.i.cs
+C:\Users\thiagodasilva\Documents\GitHub\finance\Compact\Financas\Financas\obj\Release\Pages\Historico.g.i.cs
