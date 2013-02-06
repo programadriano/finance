@@ -44,6 +44,12 @@ namespace Financas
                new Uri("/Pages/Export.xaml", UriKind.Relative));
         }
 
+        private void Historico(object sender, MouseEventArgs e)
+        {
+            NavigationService.Navigate(
+               new Uri("/Pages/MainPage.xaml", UriKind.Relative));
+        }
+
 
 
     }

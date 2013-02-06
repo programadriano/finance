@@ -79,6 +79,11 @@ namespace Financas
                new Uri("/Pages/TelaCadastro.xaml", UriKind.Relative));
         }
 
+        private void ApplicationBarIconButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

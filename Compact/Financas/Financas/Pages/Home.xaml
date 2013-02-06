@@ -36,7 +36,7 @@
                 <Image Height="96" HorizontalAlignment="Left" Margin="168,90,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="121" Source="/Financas;component/Images/1356471034_category.png" />
                 <TextBlock Height="30" Margin="199,1,0,0" Name="textBlock2" Text="Categoria" Width="277" />
             </StackPanel>
-            <StackPanel Margin="278,90,0,0" MouseEnter="Grafico">
+            <StackPanel Margin="278,90,0,0" MouseEnter="Historico">
                 <Image Height="96" Source="/Financas;component/Images/calendar.png" Stretch="Fill" Width="121" />
                 <TextBlock Height="30" Text="Histórico" Width="90" />
             </StackPanel>
@@ -50,16 +50,15 @@
             </StackPanel>
 
         </Grid>
-        <TextBlock Height="46" FontSize="32"  HorizontalAlignment="Left" Margin="103,17,0,0" Name="textBlock4" Text="Finanças Pessoais" VerticalAlignment="Top" Grid.RowSpan="2" />
+        <TextBlock FontWeight="Bold" Height="46" FontSize="32"  HorizontalAlignment="Left" Margin="103,17,0,0" Name="textBlock4" Text="Finanças Pessoais" VerticalAlignment="Top" Grid.RowSpan="2" Width="268" />
     </Grid>
 
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/Images/notification.png" Text="Button 1"/>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">            
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+                <shell:ApplicationBarMenuItem Text="contato:"/>
+                <shell:ApplicationBarMenuItem Text="thiago.adriano26@gmail.com"/>                
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>

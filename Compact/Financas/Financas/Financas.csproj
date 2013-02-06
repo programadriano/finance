@@ -79,6 +79,9 @@
     <Compile Include="Pages\Export.xaml.cs">
       <DependentUpon>Export.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Historico.xaml.cs">
+      <DependentUpon>Historico.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,7 @@
     <Content Include="Images\notification.png" />
     <Content Include="Resourses\icons\appbar.money.png" />
     <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\appbar.magnify.add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Save.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Add.gif">
@@ -135,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Export.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Historico.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage 
-    x:Class="Financas.NovaCategoria"
+    x:Class="Financas.Pages.Historico"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -10,12 +10,12 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
     shell:SystemTray.IsVisible="True"
-    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls">
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid  x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot">
         <Grid.Background>
             <ImageBrush ImageSource="/Resourses/app_bkg.png"/>
         </Grid.Background>
@@ -25,26 +25,23 @@
         </Grid.RowDefinitions>
 
         <!--TitlePanel contains the name of the application and page title-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock FontWeight="Bold" FontSize="32" x:Name="ApplicationTitle" Text="Cadastro de Categorias:" Style="{StaticResource PhoneTextNormalStyle}"/>
-        </StackPanel>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28"></StackPanel>
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock Margin="12,30,-12,-30">Nome:</TextBlock>
-            <TextBox Height="72" HorizontalAlignment="Left" Margin="0,64,0,0" Name="xCategoria" Text="" VerticalAlignment="Top" Width="460" />
+            <TextBlock FontWeight="Bold" FontSize="24" Text="Selecione uma data:" Margin="6,0,212,681"></TextBlock>
+            <toolkit:DatePicker    FontSize="40" ValueStringFormat="{}{0:dd/MM/yyyy}" x:Name="xData" Margin="120,304,164,346" />
         </Grid>
     </Grid>
  
     <!--Sample code showing usage of ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton Click="Salvar" IconUri="/Toolkit.Content/ApplicationBar.Save.png" Text="salvar"/>
-            <shell:ApplicationBarIconButton Click="Cancelar" IconUri="/Toolkit.Content/ApplicationBar.Cancel.png" Text="cancelar"/>
-            <!--<shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
-                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
-            </shell:ApplicationBar.MenuItems>-->
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">           
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <!--<shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>-->
+            </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 
