@@ -86,9 +86,11 @@ namespace Financas
 
         private void ApplicationBarIconButton_Click(object sender, EventArgs e)
         {
-            NavigationService.Navigate(
-              new Uri("/Pages/Historico.xaml", UriKind.Relative));
+
         }
+
+
+
 
 
 

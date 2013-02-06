@@ -13,6 +13,7 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
+     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     shell:SystemTray.IsVisible="False" xmlns:my1="clr-namespace:C1.Phone.FlexGrid;assembly=C1.Phone.FlexGrid" xmlns:my2="clr-namespace:C1.Phone;assembly=C1.Phone">
 
     <!--LayoutRoot contains the root grid where all other page content is placed-->
@@ -34,7 +35,7 @@
             </controls:PanoramaItem>
             
         </controls:Panorama>
-       
+        <toolkit:DatePicker Width="0"  Height="0" x:Name="TestDP"/>
     </Grid>
 
     <phone:PhoneApplicationPage.ApplicationBar>
